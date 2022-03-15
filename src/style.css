@@ -163,9 +163,10 @@ svg {
 	font-size: 0.75rem;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1024px){
 	body {
 		align-items: center;
+		justify-content: center;
 	}
 	main {
 		display: grid;
@@ -208,5 +209,16 @@ svg {
 	}
 	.task-duration {
 		display: block;
+	}
+}
+@media screen and (max-width: 425px){
+	main {
+		display: grid;
+		place-items: center;		
+	}
+}
+@media screen and (max-width: 320px){
+	body {
+		justify-content: normal;
 	}
 }
